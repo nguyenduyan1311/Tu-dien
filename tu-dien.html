@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="word" placeholder="Nhập từ">
+<button type="button" onclick="translateWord()">Translate</button>
+<script>
+    let a = ["one","two","three"];
+    let b = ["một","hai","ba"];
+      function translateWord() {
+          let d = document.getElementById('word').value;
+          for (let c in a) {
+              if (a[c] == d) {
+                  alert(b[c]);
+                  return;
+              }
+          }
+          alert("Từ điển không chứa từ này");
+      }
+</script>
+</body>
+</html>
